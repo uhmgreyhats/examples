@@ -4,7 +4,7 @@
 ## Why use Python?
 Python is a easy to learn/use scripting language that can be used in a variety of ways.
 
-## What can Python be ued for?
+## What can Python be used for?
 * Web servers
   * [Flask](http://flask.pocoo.org/)
   * [Django](https://www.djangoproject.com/)
