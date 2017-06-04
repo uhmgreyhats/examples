@@ -1,5 +1,5 @@
 # Python
-> "Now is better than never." - [PEP20](https://www.python.org/dev/peps/pep-0020/)
+> "Now is better than never." - [PEP20 - The Zen of Python](https://www.python.org/dev/peps/pep-0020/)
 
 ## Why use Python?
 Python is a easy to learn/use scripting language that can be used in a variety of ways.
