@@ -55,4 +55,4 @@
       * Searches the input file for lines containing a match to the given pattern.
       * Usage: `grep <pattern> <target_file>`
 
-
+[![asciicast](https://asciinema.org/a/3zjlti1gepjl02opkg5t3gt92.png)](https://asciinema.org/a/3zjlti1gepjl02opkg5t3gt92)
