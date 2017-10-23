@@ -1,7 +1,7 @@
 # File Extensions Cheatsheet
 
 |Extension|Description|Useful Tools|Example Commands|
-|---	|---	|---	|:-:	|:-:	|
+|---	|---	|---	|---	|
 |.py<br>.pyc<br>.pyo|Python Language File|uncompyle|python *.py|
 |.tar.gz<br>.tgz||tar|tar -xvf *.tar.gz|
 |.zip<br>.gzip||(g)unzip|unzip *.zip<br>gunzip *.gzip|
