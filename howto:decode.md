@@ -45,8 +45,7 @@ example, the salt to be loaded to the program would be a'4 instead of a\'4, as w
 |SHA-1|356a192b7913b04c54574d18c28d46e6395428ab|Used in many forums and CMS|20 bytes|Same as the sha1() function in PHP| ||
 |sha1(strtolower($username).$pass)| Admin:6c7ca345f63f835cb353ff15bd6c5e052ec08e7a|Used in SMF|20 bytes|||[1]|
 |sha1($salt.sha1($salt.sha1($pass)))|cd37bfbf68d198d11d39a67158c0c9cddf34573b:1234|Used in Woltlab BB|20 bytes|||[1]|
-|SHA-256(Unix)|$5$12345678$jBWLgeYZbSvREnuBr5s3gp13vqiKSNK1rkTk9zYE1v0|Used in Linux and other similar OS|55 characters|The hash begins with the $5$ signature, then there goes the salt (up to 8 random characters; in our example the salt is the string "12345678"), then there goes one more $ character, followed by the actual
-hash|Actually that is a loop calling the SHA-256 algorithm 5000 times|[1] [2]|
+|SHA-256(Unix)|$5$12345678$jBWLgeYZbSvREnuBr5s3gp13vqiKSNK1rkTk9zYE1v0|Used in Linux and other similar OS|55 characters|The hash begins with the $5$ signature, then there goes the salt (up to 8 random characters; in our example the salt is the string "12345678"), then there goes one more $ character, followed by the actual hash|Actually that is a loop calling the SHA-256 algorithm 5000 times|[1] [2]|
 |SHA-512(Unix)|$6$12345678$U6Yv5E1lWn6mEESzKen42o6rbEmFNLlq6Ik9X3reMXY3doKEuxrcDohKUx0Oxf44aeTIxGEjssvtT1aKyZHjs|Used in Linux and other similar OS|98 characters|The hash begins with the $6$ signature, then there goes the salt (up to 8 random characters; in our example the salt is the string "12345678"), then there goes one more $ character, followed by the actual hash| Actually that is a loop calling the SHA-512 algorithm 5000 times|[1] [2]|
 |SHA-1(Django) = sha1($salt.$pass)|sha1$12345678$90fbbcf2b72b5973ae42cd3a19ab4ae8a1bd210b|12345678 is salt (in the hexadecimal format), 90fbbcf2b72b5973ae42cd3a19ab4ae8a1bd210b is SHA-1 hash.|||
 |SHA-256(Django) = SHA-256($salt.$pass)| sha256$12345678$154c4c511cbb166a317c247a839e46cac6d9208af5b015e1867a84cd9a56007b|12345678 is salt (in the hexadecimal format),154c4c511cbb166a317c247a839e46cac6d9208af5b015e1867a84cd9a56007b is SHA-256 hash.|   |   |
@@ -77,5 +76,4 @@ Tools
 Tools
 - Audacity
 
-
-## Useful tools
+Thanks for reading!
