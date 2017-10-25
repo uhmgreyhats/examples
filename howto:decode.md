@@ -23,7 +23,7 @@ Key:
 example, the salt to be loaded to the program would be a'4 instead of a\'4, as well as the salts a"4 instead of a\"4 and a\4 instead of a\\4.
 
 |Name|Example|Use|Length|Description|Algorithm|Key|
-|---|---|---|---|---|---|---|
+|-|-|-|-|-|-|-|
 |DES(Unix)|IvS7aeT4NzQPM|Used in Linux and other similar OS|13 characters|The first two characters are the salt (random characters; in our example the salt is the string "Iv"), then there follows the actual hash||[1] [2]|
 |Domain Cached Credentials|b474d48cdfc4974d86ef4d24904cdd91|Used for caching passwords of Windows domain|16 bytes||MD4(MD4(Unicode($pass)).Unicode(strtolower($username)))|[1]|
 |MD5(Unix)|$1$12345678$XM4P3PrKBgKNnTaqG9P0T/|Used in Linux and other similar OS|34 characters|The hash begins with the $1$ signature, then there goes the salt (up to 8 random characters; in our example the salt is the string "12345678"), then there goes one more $ character, followed by the actual hash|Actually that is a loop calling the MD5 algorithm 2000 times|[1] [2]|
