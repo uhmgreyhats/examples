@@ -55,6 +55,9 @@ example, the salt to be loaded to the program would be a'4 instead of a\'4, as w
 |MD5(Custom)|   | ||  |'=='.md5(md5(md5($pass).md5($pass).md5($pass).md5($pass)))|   |
 |md5(3 x strtoupper(md5($pass)))|   | ||  |md5(strtoupper(md5(strtoupper(md5(strtoupper(md5($pass)))))))|   |
 
+Other hash encoding resources
+- http://openwall.info/wiki/john/sample-hashes
+
 ## Steganography
 > The practice of concealing messages or information within other nonsecret text or data
 
@@ -65,15 +68,25 @@ Some other useful commands would be `strings` or `grep`.
 Some tools that are applicable to all files that might have stuff hidden in them would be `foremost` or `binwalk`.
 
 ### Images
-Some tools specific to images would be `stepic`, `steghide`, or `stegdetect`.
+Some tools specific to images would be `stepic`, `steghide`, or `stegdetect`. You might also want to view the EXIF data with `exiftool` or `exifprobe`.
+
+Interesting writeups to get you thinking
+- https://github.com/ctfs/write-ups-2014/tree/master/plaid-ctf-2014/doge-stege
+- https://github.com/ctfs/write-ups-2015/tree/master/9447-ctf-2015/steganography/gife-up-now
 
 Tools
-- Digital Ink Toolkit
-- GIMP
-- Photoshop
+- [Digital Ink Toolkit](http://diit.sourceforge.net/)
+- [GIMP](https://www.gimp.org/)
+- [Photoshop](http://www.adobe.com/products/photoshop.html)
 
 ### Audio
+
+Intersting writeups to get you thinking
+- https://github.com/ctfs/write-ups-2014/tree/master/asis-ctf-quals-2014/sound-zoo
+- http://deepinsecurity.blogspot.com/2013/10/sharif-ctf-quals-2013-steganography-200.html
+
 Tools
-- Audacity
+- [Audacity](http://www.audacityteam.org/)
+- [MP3stego](http://www.petitcolas.net/steganography/mp3stego/)
 
 Thanks for reading!
